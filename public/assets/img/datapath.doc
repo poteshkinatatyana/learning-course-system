@@ -1,0 +1,331 @@
+Структура папок
+Серийный номер тома: D630-CF23
+C:.
+|   .editorconfig
+|   .env
+|   .env.example
+|   .gitattributes
+|   .gitignore
+|   .styleci.yml
+|   artisan
+|   composer.json
+|   composer.lock
+|   datapath.doc
+|   package-lock.json
+|   package.json
+|   phpunit.xml
+|   README.md
+|   test.xls
+|   webpack.mix.js
+|   
++---app
+|   +---Console
+|   |       Kernel.php
+|   |       
+|   +---Exceptions
+|   |       Handler.php
+|   |       
+|   +---Http
+|   |   |   Kernel.php
+|   |   |   
+|   |   +---Controllers
+|   |   |   |   CategoryController.php
+|   |   |   |   Controller.php
+|   |   |   |   CourseController.php
+|   |   |   |   HomeController.php
+|   |   |   |   TeacherController.php
+|   |   |   |   
+|   |   |   +---Admin
+|   |   |   |       HomeController.php
+|   |   |   |       
+|   |   |   \---Auth
+|   |   |           ConfirmPasswordController.php
+|   |   |           ForgotPasswordController.php
+|   |   |           LoginController.php
+|   |   |           RegisterController.php
+|   |   |           ResetPasswordController.php
+|   |   |           VerificationController.php
+|   |   |           
+|   |   \---Middleware
+|   |           Authenticate.php
+|   |           AuthenticateApi.php
+|   |           EncryptCookies.php
+|   |           EnsureTokenIsValid.php
+|   |           PreventRequestsDuringMaintenance.php
+|   |           RedirectIfAuthenticated.php
+|   |           TrimStrings.php
+|   |           TrustHosts.php
+|   |           TrustProxies.php
+|   |           VerifyCsrfToken.php
+|   |           
+|   +---Models
+|   |       Category.php
+|   |       Course.php
+|   |       User.php
+|   |       
+|   \---Providers
+|           AppServiceProvider.php
+|           AuthServiceProvider.php
+|           BroadcastServiceProvider.php
+|           EventServiceProvider.php
+|           RouteServiceProvider.php
+|           
++---bootstrap
+|   |   app.php
+|   |   
+|   \---cache
+|           .gitignore
+|           packages.php
+|           services.php
+|           
++---config
+|       app.php
+|       auth.php
+|       broadcasting.php
+|       cache.php
+|       cors.php
+|       database.php
+|       filesystems.php
+|       hashing.php
+|       logging.php
+|       mail.php
+|       permission.php
+|       queue.php
+|       sanctum.php
+|       services.php
+|       session.php
+|       view.php
+|       
++---database
+|   |   .gitignore
+|   |   
+|   +---factories
+|   |       UserFactory.php
+|   |       
+|   +---migrations
+|   |       2014_10_12_000000_create_users_table.php
+|   |       2014_10_12_100000_create_password_resets_table.php
+|   |       2019_08_19_000000_create_failed_jobs_table.php
+|   |       2019_12_14_000001_create_personal_access_tokens_table.php
+|   |       2022_06_11_102944_create_permission_tables.php
+|   |       2022_06_11_105451_courses.php
+|   |       2022_06_11_105512_categories.php
+|   |       
+|   \---seeders
+|           DatabaseSeeder.php
+|           
++---lang
+|   \---en
+|           auth.php
+|           pagination.php
+|           passwords.php
+|           validation.php
+|           
++---node_modules
++---public
+|   |   .htaccess
+|   |   favicon.ico
+|   |   index.php
+|   |   mix-manifest.json
+|   |   robots.txt
+|   |   
+|   +---assets
+|   |   +---css
+|   |   |       bootstrap.min.css
+|   |   |       style.css
+|   |   |       
+|   |   +---img
+|   |   |       1.jpg
+|   |   |       10.png
+|   |   |       17.png
+|   |   |       2.jpg
+|   |   |       3.png
+|   |   |       4.png
+|   |   |       78J.gif
+|   |   |       78Jk.gif
+|   |   |       DNM.gif
+|   |   |       EG3.gif
+|   |   |       iCg.gif
+|   |   |       IMAGE.png
+|   |   |       IMAGE1.png
+|   |   |       photo1653572701.jpeg
+|   |   |       
+|   |   \---js
+|   |           bootstrap.bundle.js
+|   |           bootstrap.min.js
+|   |           
+|   +---course_images
+|   |       1654946874.jpg
+|   |       1654947270.gif
+|   |       1654956248.jpg
+|   |       1654956467.jpg
+|   |       1654956827.jpg
+|   |       1654973793.gif
+|   |       1654974187.gif
+|   |       1654974195.gif
+|   |       1654974236.gif
+|   |       1655013259.png
+|   |       1655013361.jpg
+|   |       1655023841.jpg
+|   |       1655033385.jpg
+|   |       1655033449.jpg
+|   |       1655033450.jpg
+|   |       1655050176.jpg
+|   |       1655050276.png
+|   |       1655051762.png
+|   |       1655054011.jpg
+|   |       1655054286.png
+|   |       1655054474.gif
+|   |       1655054717.jpg
+|   |       1655054740.jpg
+|   |       1655056649.png
+|   |       
+|   +---css
+|   |       app.css
+|   |       
+|   \---js
+|           app.js
+|           
++---resources
+|   +---css
+|   |       app.css
+|   |       
+|   +---js
+|   |   |   app.js
+|   |   |   bootstrap.js
+|   |   |   
+|   |   \---root
+|   |       |   App.vue
+|   |       |   SingleCourse.vue
+|   |       |   
+|   |       +---personal
+|   |       |   |   CreateCourse.vue
+|   |       |   |   EditCourse.vue
+|   |       |   |   PersonalIndex.vue
+|   |       |   |   
+|   |       |   \---components
+|   |       |           BookItems.vue
+|   |       |           CardCourse.vue
+|   |       |           CourseItem.vue
+|   |       |           CourseItemEdit.vue
+|   |       |           Tiptap.vue
+|   |       |           TiptapButtons.vue
+|   |       |           
+|   |       \---welcome
+|   |           |   CourseSingleView.vue
+|   |           |   SearchInput.vue
+|   |           |   WelcomeIndex.vue
+|   |           |   
+|   |           \---components
+|   |                   Card.vue
+|   |                   
+|   +---sass
+|   |       app.scss
+|   |       _variables.scss
+|   |       
+|   \---views
+|       |   home.blade.php
+|       |   welcome.blade.php
+|       |   
+|       +---admin
+|       |   \---home
+|       |           categories.blade.php
+|       |           index.blade.php
+|       |           users.blade.php
+|       |           
+|       +---auth
+|       |   |   login.blade.php
+|       |   |   register.blade.php
+|       |   |   verify.blade.php
+|       |   |   
+|       |   \---passwords
+|       |           confirm.blade.php
+|       |           email.blade.php
+|       |           reset.blade.php
+|       |           
+|       +---layouts
+|       |       admin_layout.blade.php
+|       |       app.blade.php
+|       |       default.blade.php
+|       |       menu.blade.php
+|       |       
+|       \---pages
+|               create_course.blade.php
+|               edit_course.blade.php
+|               single.blade.php
+|               
++---routes
+|       api.php
+|       channels.php
+|       console.php
+|       web.php
+|       
++---storage
+|   +---app
+|   |   |   .gitignore
+|   |   |   
+|   |   \---public
+|   |           .gitignore
+|   |           
+|   +---framework
+|   |   |   .gitignore
+|   |   |   
+|   |   +---cache
+|   |   |   |   .gitignore
+|   |   |   |   
+|   |   |   \---data
+|   |   |       |   .gitignore
+|   |   |       |   
+|   |   |       +---2c
+|   |   |       |   \---6e
+|   |   |       +---4a
+|   |   |       |   \---fa
+|   |   |       +---c0
+|   |   |       |   \---71
+|   |   |       |           c071422490d526a8aada046adf3a9c9fa0593468
+|   |   |       |           
+|   |   |       \---ec
+|   |   |           \---c4
+|   |   |                   ecc49f49f4da6b940dcde13f0571e79c299871e6
+|   |   |                   
+|   |   +---sessions
+|   |   |       .gitignore
+|   |   |       C5o26kHODQSJdJJCOiFFkPGZ860P91iSw0y1eJMd
+|   |   |       
+|   |   +---testing
+|   |   |       .gitignore
+|   |   |       
+|   |   \---views
+|   |           .gitignore
+|   |           090c4673460e0e48a3d288e03a0de25502a6965d.php
+|   |           0947417fac4b2cc9ce70517e629709bef8d4d8ac.php
+|   |           16562dc035ff22cce4aa3149f0478ff41554b64e.php
+|   |           20ccacad712dc73c8413da718b60d5cce2dcae40.php
+|   |           2704aecc22e1ea4f99829304fcf974ca1a49f077.php
+|   |           44b866f6dc0f3c64a2a5dbf4479b01afe2cac44c.php
+|   |           5a108826b5ad8cb19b1bcc1ff0da95384466e760.php
+|   |           74c01c84118032ca09083e8e3540a38a3f0d3f93.php
+|   |           779dfecbf218c42cd4400bdded1739884338701e.php
+|   |           7afa7c5421af4bb1e7a1f0def0f128f0d56de142.php
+|   |           800969b9a95f707b4b92589925c6bd0562c43486.php
+|   |           92a8b6dcafcb3c2cdea1dc92d7ac471af12e5549.php
+|   |           aa454a59593ad90e7b6acf7d7dc33cc460459ea4.php
+|   |           e76d9bae5805e25b9d2372c83056ec26cc2796c6.php
+|   |           e8114f2e9b0c880d06bad8e7a64b52cabc76c38f.php
+|   |           f3c9ab31c478bd9d238d8fd42c37c809bcf7d4b1.php
+|   |           
+|   \---logs
+|           .gitignore
+|           laravel.log
+|           
++---tests
+|   |   CreatesApplication.php
+|   |   TestCase.php
+|   |   
+|   +---Feature
+|   |       ExampleTest.php
+|   |       
+|   \---Unit
+|           ExampleTest.php
+|           
+\---vendor
